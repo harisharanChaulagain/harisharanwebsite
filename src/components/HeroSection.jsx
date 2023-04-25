@@ -2,15 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { Button } from '../styles/Button';
+import { useGlobalContext } from '../Context'
+
 
 const HeroSection = ({name, image}) => {
+
+
+  const firstName = useGlobalContext();
+
   return (
     <Wrapper>
       <div className='container'>
         <div className='section-hero-data'>
           <p className='hero-top-data'>THIS IS ME</p>
           <h1 className='hero-heading'>{name}</h1>
-          <p className='hero-para'>I'm Hari Sharan Chaulagain. A React developer.</p>
+          <p className='hero-para'>I'm {firstName}. A React developer.</p>
         </div>
         <Button className='btn hireme-btn'>
           <NavLink to='/contact'>hire me</NavLink>

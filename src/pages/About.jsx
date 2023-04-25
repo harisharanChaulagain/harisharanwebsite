@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection'
 
 const About = () => {
   const data = {
-    name: "Hari Sharan",
+    name: "HARI SHARAN",
     image: "./images/hari1.jpg"
   }
   return (

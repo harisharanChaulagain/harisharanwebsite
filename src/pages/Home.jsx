@@ -1,9 +1,9 @@
-import React from 'react'
 import HeroSection from '../components/HeroSection'
 
 const Home = () => {
+
   const data = {
-    name: 'Hari Sharan Chaulagain',
+    name: 'HARI SHARAN CHAULAGAIN',
     image:'./images/hari.jpg'
   }
   return (
