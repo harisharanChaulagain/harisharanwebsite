@@ -6,6 +6,7 @@ import Services from "./pages/Services";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Error from "./pages/Error";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 
@@ -39,7 +40,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/service" element={<Services />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="*" element={<Error />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>
